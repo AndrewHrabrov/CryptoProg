@@ -7,8 +7,8 @@
 #include <sstream>
 
 int main() {
-	std::string file_path = "test.txt";
-	std::ifstream infile (file_path, std::ios::binary);
+    std::string file_path = "test.txt";
+    std::ifstream infile (file_path, std::ios::binary);
     std::stringstream ss;
     while (infile >> ss.rdbuf());
     std::string text = ss.str();
